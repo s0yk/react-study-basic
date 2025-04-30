@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Header from './layout/Header';
 import Footer from './layout/Footer';
+import { Height } from "@mui/icons-material";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -25,8 +26,8 @@ export default function RootLayout({ children }) {
 		<body className={`${geistSans.variable} ${geistMono.variable}`}>
 			{children}
 			<Header></Header>
-			<main></main>
-			{/* <Footer></Footer> */}
+			<main style={{height: "900px"}}></main>
+			<Footer></Footer>
 		</body>
 		</html>
 	);
